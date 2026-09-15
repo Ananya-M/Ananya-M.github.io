@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ananya Madhusudhan — Biomedical Engineer</title>
+<meta name="description" content="Ananya Madhusudhan — Biomedical Engineer working on signal processing for neurotechnology and focused ultrasound neuromodulation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,340;9..144,480;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a href="#top" class="mark">AM</a>
+  <nav class="topnav">
+    <a href="#about">About</a>
+    <a href="#now">Now</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1 class="hero-name">Ananya<br>Madhusudhan</h1>
+    <p class="hero-role">biomedical engineer — signal processing for neurotechnology</p>
+
+    <svg class="hero-trace" viewBox="0 0 1000 120" preserveAspectRatio="none" aria-hidden="true">
+      <path id="trace-path" d="M0,60 L60,60 L80,20 L100,100 L120,60 L220,60 L240,35 L255,85 L270,60 L400,60
+        L420,15 L438,105 L455,60 L620,60 L640,30 L658,90 L675,60 L800,60
+        L820,25 L838,95 L855,60 L1000,60"
+        fill="none" stroke="currentColor" stroke-width="2"/>
+    </svg>
+
+    <a href="#about" class="scroll-cue">scroll</a>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section about">
+    <div class="section-inner">
+      <h2>About</h2>
+      <p>
+        I build signal-processing pipelines and software for bioelectrical sensor data —
+        currently EEG recorded alongside Low-Intensity Focused Ultrasound (LIFU) neuromodulation
+        at UCSF, where I'm researching non-invasive treatment for Alcohol Use Disorder.
+        Before that: a custom PPG sensor board at Cala Health, TMS-evoked potential analysis
+        at Northeastern, and two years in medical-device regulatory compliance.
+      </p>
+      <p>
+        I care about turning research prototypes into pipelines other people can actually run —
+        modular, documented, and reproducible. My Northstar: infinite learning.
+      </p>
+      <div class="edu">
+        <div>
+          <span class="edu-degree">M.S. Bioengineering</span>
+          <span class="edu-school">Northeastern University</span>
+          <span class="edu-date">2023</span>
+        </div>
+        <div>
+          <span class="edu-degree">B.E. Medical Electronics</span>
+          <span class="edu-school">Ramaiah Institute of Technology</span>
+          <span class="edu-date">2019</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOW / FEATURED -->
+  <section id="now" class="section now">
+    <div class="section-inner">
+      <h2>Now <span class="status-dot" aria-hidden="true"></span> <span class="status-label">in progress</span></h2>
+      <div class="now-card">
+        <h3>A denoising &amp; peak-detection pipeline for evoked potentials</h3>
+        <p>
+          Building a frequency-domain Wiener filter to denoise EEG-derived somatosensory
+          evoked potentials, plus a domain-agnostic peak-detection algorithm to independently
+          localize the N20 and P35 components — without collapsing them into one shared-parameter
+          fit, so treatment effects specific to each neural generator stay visible.
+          Architected as decoupled modules: filter estimation, application, diagnostics, visualization.
+        </p>
+        <ul class="tag-row">
+          <li>Wiener filtering</li>
+          <li>Automated feature detection</li>
+          <li>MATLAB / EEGLAB</li>
+          <li>Biosignal classification</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section experience">
+    <div class="section-inner">
+      <h2>Experience</h2>
+      <ol class="timeline">
+        <li>
+          <time>2024 — now</time>
+          <div>
+            <h3>Clinical Research Engineer</h3>
+            <p class="org">University of California, San Francisco</p>
+            <p>Built the EEG–LIFU lab setup for simultaneous neuromodulation and EEG recording
+               (30+ sessions). Automated the EEG preprocessing pipeline in MATLAB/EEGLAB,
+               cutting manual processing time by 40%.</p>
+          </div>
+        </li>
+        <li>
+          <time>2023 — 2024</time>
+          <div>
+            <h3>Graduate Research Student</h3>
+            <p class="org">Movement Neuroscience Lab, Northeastern University</p>
+            <p>Collected and analyzed TMS-evoked potentials; developed preprocessing algorithms
+               for EEG and EMG signals.</p>
+          </div>
+        </li>
+        <li>
+          <time>2022</time>
+          <div>
+            <h3>R&amp;D Engineering Co-op</h3>
+            <p class="org">Cala Health, San Mateo</p>
+            <p>Designed a custom PPG board in Altium for Cala's wearable neuromodulation device.
+               Evaluated wearable HR sensors via HRV analysis (pyHRV), informing a sensor
+               selection change that cut research-study cost and complexity.</p>
+          </div>
+        </li>
+        <li>
+          <time>2019 — 2020</time>
+          <div>
+            <h3>Application Engineer</h3>
+            <p class="org">Panacea Medical Technologies, Bengaluru</p>
+            <p>Evaluated radiotherapy simulator and R&amp;V software for IEC 60601 / IEC 62274
+               compliance; benchmark studies for CBCT phantom design.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section projects">
+    <div class="section-inner">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <article class="project-card">
+          <h3>Implant for Immediate Lymphatic Reconstruction</h3>
+          <p>Growth-factor-coated implant design with a potential 70% reduction in operating
+             time. Provisional patent held.</p>
+          <ul class="tag-row"><li>Medical devices</li><li>Patent</li></ul>
+        </article>
+        <article class="project-card">
+          <h3>DiaLipa — Diabetes Management System</h3>
+          <p>Regulatory pathway for a combined Dexcom G6 CGM + Omnipod 5 insulin pump in a
+             single unit — input specifications, risk management under ISO 13485 / IEC 60601-1,
+             FDA guidance, verification tests, DHF documentation, and an EU MDR General Safety
+             and Performance Requirements checklist.</p>
+          <ul class="tag-row"><li>ISO 13485</li><li>EU MDR</li><li>Regulatory</li></ul>
+        </article>
+        <article class="project-card">
+          <h3>PPG Sensor Module for HRV</h3>
+          <p>Atmega-based pulse-oximetry module with a Simulink algorithm for SDNN — validated
+             to 0.2ms error.</p>
+          <ul class="tag-row"><li>Simulink</li><li>Bioinstrumentation</li></ul>
+        </article>
+        <article class="project-card">
+          <h3>Perseverative Cognition &amp; EEG</h3>
+          <p>OpenBCI dry-electrode study on 24 subjects; power spectral density (Welch) and
+             entropy analysis of rumination-linked EEG activity.</p>
+          <ul class="tag-row"><li>OpenBCI</li><li>Spectral analysis</li></ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PUBLICATIONS -->
+  <section id="publications" class="section publications">
+    <div class="section-inner">
+      <h2>Publications</h2>
+      <div class="pub">
+        <p class="pub-title">Empirical limitations of current low-intensity focused ultrasound simulation platforms</p>
+        <p class="pub-meta">Brandts SD, Staveland BR, <strong>Madhusudhan A</strong>, Ash RT, Di Ianni T, Sugrue LP, Krystal AD, Moussawi K.
+        &nbsp;·&nbsp; Brain Stimulation, 19(4):103156, 2026</p>
+        <a class="pub-link" href="https://doi.org/10.1016/j.brs.2026.103156" target="_blank" rel="noopener">doi.org/10.1016/j.brs.2026.103156</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section skills">
+    <div class="section-inner">
+      <h2>Skills</h2>
+      <div class="skill-group">
+        <p class="skill-label">signal processing &amp; ml</p>
+        <ul class="tag-row"><li>Filtering &amp; denoising</li><li>Feature extraction</li><li>Automated peak detection</li><li>Regression &amp; classification</li><li>Statistical inference</li></ul>
+      </div>
+      <div class="skill-group">
+        <p class="skill-label">programming &amp; tools</p>
+        <ul class="tag-row"><li>Python</li><li>MATLAB &amp; Simulink</li><li>EEGLAB</li><li>Git</li><li>Altium Designer</li></ul>
+      </div>
+      <div class="skill-group">
+        <p class="skill-label">domain</p>
+        <ul class="tag-row"><li>Bioinstrumentation</li><li>Hardware–software integration</li><li>Medical device regulations</li></ul>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer id="contact" class="contact">
+  <p>Building something in this space, or hiring for it? I'd like to hear from you.</p>
+  <div class="contact-links">
+    <a href="mailto:madhusudan.ananya1@gmail.com">Email</a>
+    <a href="https://www.linkedin.com/in/ananya-madhusudhan/" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://github.com/Ananya-M" target="_blank" rel="noopener">GitHub</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
