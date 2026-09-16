@@ -7,8 +7,8 @@
   --accent: #49d3c4;
   --accent-warm: #e2a23b;
 
-  --serif: 'Fraunces', serif;
-  --sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --serif: 'JetBrains Mono', ui-monospace, monospace;
+  --sans: 'JetBrains Mono', ui-monospace, monospace;
   --mono: 'JetBrains Mono', ui-monospace, monospace;
 }
 
@@ -86,13 +86,44 @@ a:focus-visible, button:focus-visible {
   position: relative;
 }
 
+.hero-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  flex-wrap: nowrap;
+  margin-top: 48px;
+}
+
 .hero-name {
   font-family: var(--serif);
   font-weight: 480;
   font-size: clamp(3.2rem, 11vw, 8rem);
   line-height: 0.98;
-  margin: 0 0 28px 0;
+  margin: 0;
   letter-spacing: -0.01em;
+  min-width: 0;
+}
+
+.hero-photo {
+  flex: 0 0 auto;
+  width: clamp(130px, 16vw, 220px);
+  margin: 0 0 28px 0;
+}
+
+.hero-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.hero-photo figcaption {
+  margin-top: 10px;
+  font-family: var(--mono);
+  font-size: 0.58rem;
+  color: var(--accent);
+  max-width: 20ch;
 }
 
 .hero-role {
@@ -112,13 +143,21 @@ a:focus-visible, button:focus-visible {
 }
 
 #trace-path {
-  stroke-dasharray: 1600;
-  stroke-dashoffset: 1600;
-  animation: draw 2.4s cubic-bezier(0.65, 0, 0.35, 1) 0.3s forwards;
+  stroke-dasharray: 2900;
+  stroke-dashoffset: 2900;
+  animation: draw 1.6s cubic-bezier(0.65, 0, 0.35, 1) 0.3s forwards;
 }
 
 @keyframes draw {
   to { stroke-dashoffset: 0; }
+}
+
+.hero-trace-caption {
+  margin: 8px 0 0 0;
+  font-family: var(--mono);
+  font-size: 0.58rem;
+  color: var(--accent);
+  text-align: right;
 }
 
 .scroll-cue {
@@ -186,6 +225,30 @@ a:focus-visible, button:focus-visible {
   font-size: 0.8rem;
   color: var(--accent);
   margin-left: auto;
+}
+
+/* Glossary */
+.glossary-list {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 12px 24px;
+  margin: 0;
+}
+
+.glossary-list > div {
+  display: contents;
+}
+
+.glossary-list dt {
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.glossary-list dd {
+  margin: 0;
+  color: var(--text-dim);
 }
 
 /* Now / featured */
